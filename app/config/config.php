@@ -21,7 +21,7 @@
     if (file_exists($class_path)) {
       require_once($class_path);
     } else{
-      App\Core\App::view('error_404');
+      view('error_404');
       exit;
     }
   });
