@@ -1,6 +1,24 @@
 <?php
 
+  // CONFIG FILE ::
+
   require_once __DIR__ . DIRECTORY_SEPARATOR . 'config' . DIRECTORY_SEPARATOR . 'config.php';
+
+  // VENDOR AUTOLOAD ::
+
+  require_once VENDOR . DS . 'autoload.php';
+
+  // Dotenv NAMESPACES ::
+
+  use Dotenv\Environment\Adapter\EnvConstAdapter;
+  use Dotenv\Environment\Adapter\ServerConstAdapter;
+  use Dotenv\Environment\DotenvFactory;
+  use Dotenv\Dotenv;
+
+  // .ENV CONFIGURATIONS
+
+  $dotenv = Dotenv::createImmutable(ROOT);
+  $dotenv->load();
 
   // CLASS AUTOLOADING ::
 
