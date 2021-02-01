@@ -4,6 +4,7 @@
 
   define('DS', DIRECTORY_SEPARATOR);
   define('ROOT', dirname(dirname(__DIR__)));
+  define('VENDOR', dirname(dirname(__DIR__)) . DS . 'vendor');
   define('APP', dirname(__DIR__));
   define('CONTROLLERS', APP . DS . 'controllers');
   define('VIEWS', APP . DS . 'views');
