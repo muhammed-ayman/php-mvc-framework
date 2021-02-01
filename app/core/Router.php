@@ -24,11 +24,11 @@
       $exists = 0;
       foreach (array_keys(self::$actions) as $key => $value) {
         if (preg_match($value, $uri)) {
-          self::$actions[$value]();
           $uri_exploded = explode('/', $uri);
           foreach (array_keys(self::$actions_identifiers[$key]) as $identifier) {
-            $_SESSION[self::$actions_identifiers[$key][$identifier]] = $uri_exploded[$identifier];
+            $GLOBALS['app']->register_identifier(self::$actions_identifiers[$key][$identifier], $uri_exploded[$identifier]);
           }
+          self::$actions[$value]();
           $exists = 1;
           break;
         }
