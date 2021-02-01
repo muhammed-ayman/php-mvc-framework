@@ -6,5 +6,6 @@
   </head>
   <body>
     <h1>Hello World</h1>
+    <h1>This is the user that has the id <?php echo request('id'); ?></h1>
   </body>
 </html>
