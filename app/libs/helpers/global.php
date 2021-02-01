@@ -8,3 +8,9 @@
       view('error_404');
     }
   }
+
+  function request($identifier)
+  {
+    global $app;
+    echo $app->request_identifier($identifier);
+  }
