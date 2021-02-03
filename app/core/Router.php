@@ -20,7 +20,7 @@
 
     public function route()
     {
-      $uri = trim($_SERVER['REQUEST_URI'],'/');
+      $uri = urldecode(trim($_SERVER['REQUEST_URI'],'/'));
       $exists = 0;
       foreach (array_keys(self::$actions) as $key => $value) {
         if (preg_match($value, $uri)) {
@@ -53,7 +53,7 @@
       for ($i=0; $i < count($uri) ; $i++) {
         if (preg_match('/^{[a-zA-Z0-9]+}$/',$uri[$i])) {
           $regex_arr[$i] = substr($uri[$i], 1, -1);
-          $uri[$i] = '[a-zA-Z0-9]+';
+          $uri[$i] = '[a-zA-Z0-9-.~_ ]+';
         }
       }
       $uri = implode('\/', $uri);
