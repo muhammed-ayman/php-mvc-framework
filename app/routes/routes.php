@@ -14,7 +14,7 @@
 ===================================================================== */
 
 
-$router->get('/home/{id}', function()
+$router->get('/home/{username}/{id}', function()
 {
   view('home');
 });
