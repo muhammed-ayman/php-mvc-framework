@@ -1,3 +1,4 @@
 <?php
 
-  require_once dirname(__DIR__) . DIRECTORY_SEPARATOR . 'app'. DIRECTORY_SEPARATOR .'autoload.php';
+    require_once __DIR__ . '/../vendor/autoload.php';
+    require_once __DIR__ . '/../routes/web.php';

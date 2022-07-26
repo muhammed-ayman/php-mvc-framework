@@ -1,5 +1,20 @@
 {
+    "name": "oppikn/php-mvc",
+    "description": "Oppikn's Php MVC Framework",
+    "authors": [
+        {
+            "name": "muhammed-ayman",
+            "email": "muhammed.ayman@outlook.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "app",
+            "Psi\\": "src"
+        }
+    },
     "require": {
-        "vlucas/phpdotenv": "^5.3"
+        "vlucas/phpdotenv": "^5.4",
+        "symfony/var-dumper": "^6.1"
     }
 }
