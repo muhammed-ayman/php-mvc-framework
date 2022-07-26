@@ -1,3 +1,3 @@
-# Advanced PHP MVC Framework
+# Oppikn's PHP MVC Framework
 
-This is my PHP MVC Framework which I use for my PHP projects. Feel free to use it if you want :blush:
+This is my PHP MVC Framework that I use for my projects. Feel free to use it if you want :blush:
