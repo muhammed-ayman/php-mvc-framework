@@ -3,7 +3,5 @@
     use Psi\Http\Route;
     
     Route::get('/', function() {
-        return 'hello';
+        echo 'hello';
     });
-
-    var_dump(Route::$routes['get']);
