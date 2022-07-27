@@ -7,6 +7,9 @@
     {
         public static function create($view, $params = [])
         {
-            return;
+            if (file_exists(views_path() . $view . '.php'))
+                include views_path() . $view . '.php';
+            else
+                echo "404";
         }
     }

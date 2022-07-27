@@ -1,7 +1,8 @@
 <?php
 
     use Psi\Http\Route;
+    use Psi\View\View;
     
     Route::get('/', function() {
-        echo 'hello';
+        View::create('hello');
     });
