@@ -1,4 +1,6 @@
 <?php
+    
+    use Psi\App;
 
     if (!function_exists('app_path')) {
         function app_path() {
@@ -9,5 +11,17 @@
     if (!function_exists('views_path')) {
         function views_path() {
             return app_path() . 'views/';
+        }
+    }
+
+    if (!function_exists('app')) {
+        function app() {
+            static $instance = null;
+
+            if (!$instance) {
+                $instance = new App;
+            }
+
+            return $instance;
         }
     }
