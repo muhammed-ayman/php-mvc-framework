@@ -1,8 +1,6 @@
 <?php
 
     use Psi\Http\Route;
-    use Psi\View\View;
+    use App\Controllers\HomeController;
     
-    Route::get('/', function() {
-        View::create('hello');
-    });
+    Route::get('/', [HomeController::class, 'index']);
