@@ -2,6 +2,12 @@
     
     use Psi\App;
 
+    if (!function_exists('env')) {
+        function env($key) {
+            return $_ENV[$key] ?? null;
+        }
+    }
+
     if (!function_exists('app_path')) {
         function app_path() {
             return dirname(__DIR__) . '/../';
