@@ -1,6 +1,7 @@
 <?php
     
     use Psi\App;
+    use Psi\View\View;
 
     if (!function_exists('env')) {
         function env($key) {
@@ -29,5 +30,11 @@
             }
 
             return $instance;
+        }
+    }
+
+    if (!function_exists('view')) {
+        function view($view, $params = []) {
+            View::create($view, $params);
         }
     }
