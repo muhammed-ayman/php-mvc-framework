@@ -7,7 +7,7 @@
     {
 
         public function index() {
-            echo 'home';
+            view('hello');
         }
 
     }
