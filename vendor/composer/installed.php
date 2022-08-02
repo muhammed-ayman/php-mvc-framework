@@ -3,7 +3,7 @@
         'name' => 'oppikn/php-mvc',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '093edd98b99cef16ba76e6b1bb8fba4f91a1b175',
+        'reference' => '0cdd2c61f4134e5f7ad1c94c21a35af733273e04',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -22,7 +22,7 @@
         'oppikn/php-mvc' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '093edd98b99cef16ba76e6b1bb8fba4f91a1b175',
+            'reference' => '0cdd2c61f4134e5f7ad1c94c21a35af733273e04',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
